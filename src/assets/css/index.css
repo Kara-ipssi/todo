@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root{
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://www.stream-vf.co/images/boxed-bg.jpg");
+    height: 100vh;
+}
+
+.page-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

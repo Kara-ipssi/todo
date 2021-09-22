@@ -1,0 +1,10 @@
+.header{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 2em;
+}
