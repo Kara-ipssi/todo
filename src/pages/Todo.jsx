@@ -5,14 +5,23 @@ import '../assets/css/index.css';
 function Todo(){
     return(
         <div className="container">
-            <Header title={"TODO list"}/>
+            <Header title={"TODO LIST"}/>
             <div className="page-body">
-                <input type="text" className="new-card" name="new-card" placeholder="Entrez votre tâche ici"/>
-                <section className="main">
+                <div className="top">
+                    <input type="text" className="new-card" name="new-card" placeholder="Entrez votre tâche ici"/>
+                    <button className="add-new">Ajouter</button>
+                </div>
+                <div className="body">
                     <ul>
-                        <li>Hello</li>
+                        <li>Salut</li>
+                        <li>Salut</li>
+                        <li>Salut</li>
+                        <li>Salut</li>
                     </ul>
-                </section>
+                </div>
+                <div className="foot">
+
+                </div>
             </div>
         </div>
     )

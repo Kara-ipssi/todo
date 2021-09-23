@@ -16,6 +16,7 @@ code {
     display: flex;
     flex-direction: row;
     background-image: url("https://www.stream-vf.co/images/boxed-bg.jpg");
+    /* background-color: #F3F7FB; */
     height: 100vh;
 }
 
