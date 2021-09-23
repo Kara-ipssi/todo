@@ -22,3 +22,109 @@
 .add-new:hover{
     cursor: pointer;
 }
+
+.body ul {
+    position: relative;
+    padding: 20px;
+}
+
+.body ul li{
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid #1574F2;
+    cursor: pointer;
+}
+
+.body ul li:last-child{
+    border-bottom: none;
+}
+
+.body ul li label{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.body ul li label input{
+    visibility: none;
+    appearance: none;
+}
+
+.body ul li label p{
+    position: absolute;
+}
+
+.body ul li label span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1574F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body ul li label span::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg);
+}
+
+
+.body ul li label input:checked ~ p{
+    text-decoration: line-through;
+    color: #c98a8a;
+}
+
+.body ul li label input:checked ~ span{
+    background: #1574F2;
+}
+
+.body ul li label input:checked ~ span::before{
+    border-left: 2px Solid #FFF;
+    border-bottom: 2px Solid #FFF;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot button{
+    padding: 16px;
+    border: none;
+    background-color: #1574F2;
+    margin-right: 5px;
+    color: wheat;
+}
+
+.foot button:last-child{
+    margin-right: 0;
+}
+
+.foot button:hover{
+    cursor: pointer;
+    background-color: #92bdf7;
+    color: white;
+}
+
+/* @media screen and (min-width: 1200px) {
+    .body {
+        width: 50%;
+    }
+
+    .top{
+        width: 50%;
+    }
+} */
