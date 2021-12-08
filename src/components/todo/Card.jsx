@@ -2,7 +2,7 @@
 
 function Card(props){
     
-    const link ="todo-back-jly8t63xz-karadev.vercel.app";
+    const link ="https://todo-back-jly8t63xz-karadev.vercel.app";
 
     const changeState =(id) => {
         fetch(`${link}/tasks/toggle/${id}`, {
