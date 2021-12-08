@@ -1,9 +1,11 @@
 
 
 function Card(props){
+    
+    const link ="todo-back-jly8t63xz-karadev.vercel.app";
 
     const changeState =(id) => {
-        fetch(`http://localhost:4000/tasks/toggle/${id}`, {
+        fetch(`${link}/tasks/toggle/${id}`, {
             method: "PUT"
         })
         .then(response => {
@@ -19,7 +21,7 @@ function Card(props){
 
     const removeElement = (id) => {
         if( window.confirm("Voulez vous supprimer cette tâche ?")){
-            fetch(`http://localhost:4000/tasks/remove/${id}`, {
+            fetch(`${link}/tasks/remove/${id}`, {
                 method: "DELETE"
             })
             .then(response => {
